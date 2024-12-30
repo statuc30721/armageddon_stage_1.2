@@ -7,3 +7,6 @@
 
 # terraform variable files may include sensitive data
 *.tfvars
+
+# VIM style hidden files.
+*._*
