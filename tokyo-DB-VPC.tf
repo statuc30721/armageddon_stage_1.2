@@ -170,8 +170,13 @@ resource "aws_rds_cluster" "pii_db_cluster" {
 
   # The username and passwords should be set in a variable file and updated 
   # by the appropriate database manager.
+  
   master_username = "admin"
-  master_password = "badpassword123"
+
+  # Recommend adding a password variable or manually putting a password in 
+  # this field before deploying the database cluster.
+
+  master_password = ""
 
   # Create a random password. 
   # create_random_password = true
